@@ -20,7 +20,7 @@ app.get('/', function(req,res) {
 })
 
 app.get("/:id", function (req, res) {
-    var record = getId(data, req.params.id);
+    var record = getId(data, req.params.id)
     if (!record){
         res.status(404).json({
             error: {message: "No record found!"}
