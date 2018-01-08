@@ -16,6 +16,7 @@ function getId(data, id){
 
 app.get('/', function(req,res) {
   res.json({data})
+
 })
 
 app.get("/:id", function (req, res) {
@@ -31,4 +32,4 @@ app.get("/:id", function (req, res) {
 
 app.listen(port, function() {
   console.log('Server started on port ' + port)
-});
+})
